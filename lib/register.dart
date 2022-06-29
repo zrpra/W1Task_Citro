@@ -27,7 +27,7 @@ class _RegisterPageState extends State<RegisterPage> {
       home: Scaffold(
         resizeToAvoidBottomInset: (false),
         appBar: AppBar(title: const Text(
-            'Citro',
+          'Citro',
           style: TextStyle(
               fontWeight: FontWeight.w700),
         )),
@@ -65,13 +65,15 @@ class _RegisterPageState extends State<RegisterPage> {
                 padding: const EdgeInsets.fromLTRB(25.0, 10.0, 25.0, 10.0),
                 child: TextField(
                   controller: _emailCon,
-                  decoration: const InputDecoration(
+                  decoration: InputDecoration(
                     filled: true,
-                    fillColor: Color(0xCCF8F7F3),
+                    fillColor: const Color(0xCCF8F7F3),
                     labelText: 'Email',
                     hintText: 'Enter your email',
-                    border: OutlineInputBorder(),
-                    focusedBorder: OutlineInputBorder(
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10.0)
+                    ),
+                    focusedBorder: const OutlineInputBorder(
                       borderSide: BorderSide(width: 1,color: Colors.blueGrey),
                     ),
                   ),
@@ -88,7 +90,9 @@ class _RegisterPageState extends State<RegisterPage> {
                       fillColor: const Color(0xCCF8F7F3),
                       labelText: 'Password',
                       hintText: 'Enter your password',
-                      border: const OutlineInputBorder(),
+                      border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(10.0)
+                      ),
                       focusedBorder: const OutlineInputBorder(
                         borderSide: BorderSide(width: 1,color: Colors.blueGrey),
                       ),

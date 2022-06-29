@@ -27,7 +27,7 @@ class _LoginPageState extends State<LoginPage> {
       home: Scaffold(
         resizeToAvoidBottomInset: (false),
         appBar: AppBar(title: const Text(
-            'Citro',
+          'Citro',
           style: TextStyle(
               fontWeight: FontWeight.w700),
         )),
@@ -71,7 +71,7 @@ class _LoginPageState extends State<LoginPage> {
                     labelText: 'Email',
                     hintText: 'Enter your email',
                     border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(10.0)
+                        borderRadius: BorderRadius.circular(10.0)
                     ),
                     focusedBorder: const OutlineInputBorder(
                       borderSide: BorderSide(width: 1,color: Colors.blueGrey),
@@ -91,7 +91,7 @@ class _LoginPageState extends State<LoginPage> {
                       labelText: 'Password',
                       hintText: 'Enter your password',
                       border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(10.0)
+                          borderRadius: BorderRadius.circular(10.0)
                       ),
                       focusedBorder: const OutlineInputBorder(
                         borderSide: BorderSide(width: 1,color: Colors.blueGrey),
@@ -101,9 +101,9 @@ class _LoginPageState extends State<LoginPage> {
                           _passVisibility = !_passVisibility;
                         });
                       },
-                        icon: _passVisibility
-                          ? const Icon(Icons.visibility_off_outlined)
-                          : const Icon(Icons.visibility_outlined)
+                          icon: _passVisibility
+                              ? const Icon(Icons.visibility_off_outlined)
+                              : const Icon(Icons.visibility_outlined)
                       )
                   ),
                 ),
@@ -129,10 +129,10 @@ class _LoginPageState extends State<LoginPage> {
                 padding: const EdgeInsets.fromLTRB(30.0, 0.0, 30.0, 10.0),
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20.0)
-                    ),
-                    primary: const Color(0xFFD7723C)
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20.0)
+                      ),
+                      primary: const Color(0xFFD7723C)
                   ),
                   onPressed: () {
                     _emailCon.clear();
