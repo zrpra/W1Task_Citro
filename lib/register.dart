@@ -73,8 +73,9 @@ class _RegisterPageState extends State<RegisterPage> {
                     border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10.0)
                     ),
-                    focusedBorder: const OutlineInputBorder(
-                      borderSide: BorderSide(width: 1,color: Colors.blueGrey),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10.0),
+                      borderSide: const BorderSide(width: 1,color: Colors.blueGrey),
                     ),
                   ),
                 ),
@@ -93,8 +94,9 @@ class _RegisterPageState extends State<RegisterPage> {
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10.0)
                       ),
-                      focusedBorder: const OutlineInputBorder(
-                        borderSide: BorderSide(width: 1,color: Colors.blueGrey),
+                      focusedBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10.0),
+                        borderSide: const BorderSide(width: 1,color: Colors.blueGrey),
                       ),
                       suffixIcon: IconButton(onPressed: () {
                         setState(() {
